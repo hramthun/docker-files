@@ -14,7 +14,7 @@ ENV LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
 # install or check installation of software
 RUN yum -y install python-devel python-pip
 RUN yum -y install readline-devel openssl-devel zlib-devel glibc-devel bzip2 tar bzip2-devel sqlite-devel
-RUN yum install -y libxml2 libxml2-devel libxslt libxslt-devel
+RUN yum -y install libxml2 libxml2-devel libxslt libxslt-devel
 RUN yum -y install gcc-gfortran gcc44-gfortran libgfortran lapack blas python-devel
 RUN yum -y install postgresql.x86_64 postgresql-devel.x86_64 postgresql-devel
 
